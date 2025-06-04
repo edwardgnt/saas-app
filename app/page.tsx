@@ -34,7 +34,7 @@ const Page = () => {
           color="#BDE7ff"
         />
         <CompanionsList
-          title="Recently completed sessions"
+          title="Recently Sessions"
           companions={recentSessions}
           classNames="w-2/3 max-lg:w-full"
         />
