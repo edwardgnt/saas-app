@@ -1,5 +1,4 @@
 import CompanionCard from "@/components/CompanionCard";
-import React from "react";
 import CompanionsList from "@/components/CompanionsList";
 import CTA from "@/components/CTA";
 import { recentSessions } from "@/constants";
@@ -7,7 +6,8 @@ import { recentSessions } from "@/constants";
 const Page = () => {
   return (
     <main>
-      <h1 className="text-2xl underline">Popular Companions</h1>
+      <h1>Popular Companions</h1>
+
       <section className="home-section">
         <CompanionCard
           id="123"

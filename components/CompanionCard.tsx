@@ -34,7 +34,7 @@ const CompanionCard = ({
 
       <h2 className="text-2xl font-bold">{name}</h2>
       <p className="text-sm">{topic}</p>
-      <div className="flext items-center gap-2">
+      <div className="flex items-center gap-2">
         <Image
           src="/icons/clock.svg"
           alt="duration"
@@ -43,7 +43,7 @@ const CompanionCard = ({
         />
         <p className="text-sm">{duration} minutes</p>
       </div>
-      <Link href={`/companion/${id}`} className="w-full">
+      <Link href={`/companions/${id}`} className="w-full">
         <button className="btn-primary w-full justify-center">
           Launch Lesson{" "}
         </button>

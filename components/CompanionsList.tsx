@@ -1,12 +1,11 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 import { cn, getSubjectColor } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,7 +22,7 @@ const CompanionsList = ({
   classNames,
 }: CompanionsListProps) => {
   return (
-    <article className={cn('companion-list', classNames)}>
+    <article className={cn("companion-list", classNames)}>
       <h2 className="font-bold text-3xl">{title}</h2>
 
       <Table>
@@ -40,11 +39,16 @@ const CompanionsList = ({
               <TableCell>
                 <Link href={`/companions/${id}`}>
                   <div className="flex items-center gap-2">
-                    <div className="size-[72px] flex items-center justify-center rounded-lg max-md:hidden" style={{ backgroundColor: getSubjectColor(subject) }}>
-                      <Image src={`/icons/${subject}.svg`}
+                    <div
+                      className="size-[72px] flex items-center justify-center rounded-lg max-md:hidden"
+                      style={{ backgroundColor: getSubjectColor(subject) }}
+                    >
+                      <Image
+                        src={`/icons/${subject}.svg`}
                         alt={subject}
                         width={35}
-                        height={35} />
+                        height={35}
+                      />
                     </div>
                     <div className="flex flex-col">
                       <p className="font-bold text-2xl">{name}</p>
@@ -57,20 +61,29 @@ const CompanionsList = ({
                 <div className="subject-badge w-fit max-md:hidden">
                   {subject}
                 </div>
-                <div className="flex items-center justify-center rounded-lg w-fit p-2 md:hidden" style={{ backgroundColor: getSubjectColor(subject) }}>
-                  <Image src={`/icons/${subject}.svg`}
+                <div
+                  className="flex items-center justify-center rounded-lg w-fit p-2 md:hidden"
+                  style={{ backgroundColor: getSubjectColor(subject) }}
+                >
+                  <Image
+                    src={`/icons/${subject}.svg`}
                     alt={subject}
                     width={18}
-                    height={18} />
+                    height={18}
+                  />
                 </div>
               </TableCell>
               <TableCell>
                 <div className="flex items-center gap-2 w-full">
-                  <Image src="/icons/clock.svg"
+                  <Image
+                    src="/icons/clock.svg"
                     alt="duration"
                     width={13.5}
-                    height={13.5} />
-                  <p className="text-2xl">{duration} {' '} <span className="max-md:hidden">mins</span></p>
+                    height={13.5}
+                  />
+                  <p className="text-2xl">
+                    {duration} <span className="max-md:hidden">mins</span>
+                  </p>
                 </div>
               </TableCell>
             </TableRow>
