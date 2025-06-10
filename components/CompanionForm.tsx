@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -192,7 +191,9 @@ const CompanionForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full cursor-pointer">Build Your Companion</Button>
+        <Button type="submit" className="w-full cursor-pointer">
+          Build Your Companion
+        </Button>
       </form>
     </Form>
   );
